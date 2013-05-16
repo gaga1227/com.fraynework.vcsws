@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>Victoria Catholic School Mobile Services</title>
+<!-- CSS:VENDOR -->
+<!-- <link rel="stylesheet" href="lib/jqm/jquery.mobile-1.2.0.min.css"> -->
+<!-- CSS:FONT -->
+<link rel="stylesheet" href="lib/font/montserrat-webfont/font.css">
+<link rel="stylesheet" href="lib/font/source-sans-pro-webfont/font.css">
+<!-- CSS:ICON -->
+<link rel="stylesheet" href="lib/icon/fontawesome/icon.css">
+<link rel="stylesheet" href="lib/icon/fwicon/icon.css">
+<!-- CSS:LIB -->
+<link rel="stylesheet" href="lib/css/normalize.css">
+<link rel="stylesheet" href="lib/css/animate.css">
+<!-- CSS:APP -->
+<link rel="stylesheet" href="lib/css/app.css">
+<!-- CSS:CUSTOM -->
+<style>
+</style>
+<!-- JS:PHONEGAP -->
+<!--
+<script src="phonegap.js"></script>
+<script src="PushNotification.js"></script>
+-->
+<!-- JS:VENDOR -->
+<script src="lib/js/zepto-1.0.all.min.js"></script>
+<!--
+<script src="lib/js/jquery-1.8.2.min.js"></script>
+<script src="lib/js/jqm.mobileinit.js"></script>
+<script src="lib/jqm/jquery.mobile-1.2.0.min.js"></script>
+-->
+<!-- JS:LIB -->
+<script src="lib/js/fastclick.js"></script>
+<script src="lib/js/ftscroller.js"></script>
+</head>
+<body class="bgPattern">
+
+<!-- PAGE: SPLASH -->
+<div id="pgSplash" class="page hidden" data-role="page">
+	<div class="pageBg"></div>
+	<div class="pageContent" data-role="content">
+		<div class="brandTitle"></div>
+	</div>
+</div><!-- /PAGE: SPLASH -->
+
+<!-- PAGE: HOME -->
+<div id="pgHome" class="page hidden" data-role="page">
+	<div class="pageBg"></div>
+	<div class="pageContent" data-role="content">
+		<div class="brandTitle"></div>
+		<div class="brandImage"></div>
+	</div>
+	<div class="menu bgPattern">
+		<h2 class="title">
+			<span class="label">My School</span>
+			<a href="#" class="btnMenu" data-role="button"><i class="icon fwicon-grid-all"></i><i class="icon fwicon-grid"></i></a>
+		</h2>
+		<nav class="menuItems">
+			<a href="#" class="menuItem" data-role="button" data-target="Notifications"><i class="icon fwicon-horn"></i><span class="label">Notifications</span><b class="bubble">12</b></a>
+			<a href="#" class="menuItem" data-role="button" data-target="News"><i class="icon fwicon-article"></i><span class="label">News</span></a>
+			<a href="#" class="menuItem" data-role="button" data-target="Events"><i class="icon fwicon-calendar"></i><span class="label">Events</span></a>
+			<a href="#" class="menuItem" data-role="button" data-target="Newsletters"><i class="icon fwicon-speech"></i><span class="label">Newsletters</span></a>
+			<a href="#" class="menuItem" data-role="button" data-target="Gallery"><i class="icon fwicon-image"></i><span class="label">Gallery</span></a>
+			<a href="#" class="menuItem" data-role="button" data-target="Contact"><i class="icon fwicon-contact"></i><span class="label">Contact</span></a>
+			<a href="#" class="menuItem" data-role="button" data-target="Website"><i class="icon fwicon-globe"></i><span class="label">Website</span></a>
+			<a href="#" class="menuItem" data-role="button" data-target="Social"><i class="icon fwicon-users"></i><span class="label">Social</span></a>
+			<a href="#" class="menuItem" data-role="button" data-target="Settings"><i class="icon fwicon-cog"></i><span class="label">Settings</span></a>
+		</nav>
+	</div>
+</div><!-- /PAGE: HOME -->
+
+<!-- PAGE: MENU -->
+<div id="pgMenu" class="page hidden" data-role="page">
+	<div class="pageBg"><div class="bgPattern"></div></div>
+	<div class="pageContent" data-role="content">
+		<div class="brandTitle"></div>
+		<div class="menuList">
+			<h2 class="title">
+				<span class="label">Menu</span>
+			</h2>
+			<div class="scroller" data-role="scroller">
+				<nav class="menuItems">
+					<a href="#" class="menuItem" data-role="button" data-target="Notifications"><i class="icon iconInline iconInlineLeft fwicon-horn"></i><span class="label">Notifications</span><b class="bubble">12</b></a>
+					<a href="#" class="menuItem" data-role="button" data-target="News"><i class="icon iconInline iconInlineLeft fwicon-article"></i><span class="label">News</span></a>
+					<a href="#" class="menuItem" data-role="button" data-target="Events"><i class="icon iconInline iconInlineLeft fwicon-calendar"></i><span class="label">Events</span></a>
+					<a href="#" class="menuItem" data-role="button" data-target="Newsletters"><i class="icon iconInline iconInlineLeft fwicon-speech"></i><span class="label">Newsletters</span></a>
+					<a href="#" class="menuItem" data-role="button" data-target="Gallery"><i class="icon iconInline iconInlineLeft fwicon-image"></i><span class="label">Gallery</span></a>
+					<a href="#" class="menuItem" data-role="button" data-target="Contact"><i class="icon iconInline iconInlineLeft fwicon-contact"></i><span class="label">Contact</span></a>
+					<a href="#" class="menuItem" data-role="button" data-target="Website"><i class="icon iconInline iconInlineLeft fwicon-globe"></i><span class="label">Website</span></a>
+					<a href="#" class="menuItem" data-role="button" data-target="Social"><i class="icon iconInline iconInlineLeft fwicon-users"></i><span class="label">Social</span></a>
+					<a href="#" class="menuItem" data-role="button" data-target="Settings"><i class="icon iconInline iconInlineLeft fwicon-cog"></i><span class="label">Settings</span></a>
+					<a href="#" class="menuItem" data-role="button" data-target=""><i class="icon iconInline iconInlineLeft fwicon-star"></i><span class="label">More Item</span></a>
+					<a href="#" class="menuItem" data-role="button" data-target=""><i class="icon iconInline iconInlineLeft fwicon-star"></i><span class="label">More Item</span></a>
+					<a href="#" class="menuItem" data-role="button" data-target=""><i class="icon iconInline iconInlineLeft fwicon-star"></i><span class="label">More Item</span></a>
+					<a href="#" class="menuItem" data-role="button" data-target=""><i class="icon iconInline iconInlineLeft fwicon-star"></i><span class="label">More Item</span></a>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="bgShadow bgShadowRight"></div>
+</div><!-- /PAGE: MENU -->
+
+<!-- PAGE: NEWS -->
+<div id="pgNews" class="page hidden" data-role="page">
+	<div class="pageHeader" data-role="header">
+		<span class="headerTitle">News</span>
+		<a href="#" class="headerBtn headerBtnLeft btnMenu" data-role="button"><i class="icon fwicon-menu"></i></a>
+		<span class="headerIcon headerIconRight"><i class="icon fwicon-article"></i></span>
+	</div>
+	<div class="pageContent bgPattern" data-role="content">
+		<div class="scroller" data-role="scroller">
+			<div id="newsList" class="list" data-role="list">
+				<article class="item itemNews" data-role="button">
+					<div class="imgThumb"><img src="lib/img/ph-160x120.gif" alt=""></div>
+					<div class="content">
+						<p class="date">12 August 2013</p>
+						<p class="title">NAPLAN Testing</p>
+					</div>
+					<i class="icon fwicon-chevron-right"></i>
+				</article>
+				<article class="item itemNews" data-role="button">
+					<div class="imgThumb"><img src="lib/img/ph-160x120.gif" alt=""></div>
+					<div class="content">
+						<p class="date">29 May 2013</p>
+						<p class="title">Grandparents and Special Visitors Day</p>
+					</div>
+					<i class="icon fwicon-chevron-right"></i>
+				</article>
+				<article class="item itemNews" data-role="button">
+					<div class="imgThumb"><img src="lib/img/ph-160x120.gif" alt=""></div>
+					<div class="content">
+						<p class="date">6 June 2013</p>
+						<p class="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+					</div>
+					<i class="icon fwicon-chevron-right"></i>
+				</article>
+				<article class="item itemNews" data-role="button">
+					<div class="imgThumb"><img src="lib/img/ph-160x120.gif" alt=""></div>
+					<div class="content">
+						<p class="date">6 Feburary 2013</p>
+						<p class="title">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+					</div>
+					<i class="icon fwicon-chevron-right"></i>
+				</article>
+				<article class="item itemNews" data-role="button">
+					<div class="imgThumb"><img src="lib/img/ph-160x120.gif" alt=""></div>
+					<div class="content">
+						<p class="date">25 December 2012</p>
+						<p class="title">Vestibulum tortor quam, feugiat vitae, ultricies egets</p>
+					</div>
+					<i class="icon fwicon-chevron-right"></i>
+				</article>
+				<article class="item itemNews" data-role="button">
+					<div class="imgThumb"><img src="lib/img/ph-160x120.gif" alt=""></div>
+					<div class="content">
+						<p class="date">13 March 2011</p>
+						<p class="title">Morbi in sem quis dui placerat ornare.</p>
+					</div>
+					<i class="icon fwicon-chevron-right"></i>
+				</article>
+				<article class="item itemNews" data-role="button">
+					<div class="imgThumb"><img src="lib/img/ph-160x120.gif" alt=""></div>
+					<div class="content">
+						<p class="date">5 November 2010</p>
+						<p class="title">Consectetuer adipiscing elit.</p>
+					</div>
+					<i class="icon fwicon-chevron-right"></i>
+				</article>
+				<article class="item itemNews" data-role="button">
+					<div class="imgThumb"><img src="lib/img/ph-160x120.gif" alt=""></div>
+					<div class="content">
+						<p class="date">12 August 2013</p>
+						<p class="title">NAPLAN Testing</p>
+					</div>
+					<i class="icon fwicon-chevron-right"></i>
+				</article>
+				<article class="item itemNews" data-role="button">
+					<div class="imgThumb"><img src="lib/img/ph-160x120.gif" alt=""></div>
+					<div class="content">
+						<p class="date">29 May 2013</p>
+						<p class="title">Grandparents and Special Visitors Day</p>
+					</div>
+					<i class="icon fwicon-chevron-right"></i>
+				</article>
+				<article class="item itemNews" data-role="button">
+					<div class="imgThumb"><img src="lib/img/ph-160x120.gif" alt=""></div>
+					<div class="content">
+						<p class="date">6 June 2013</p>
+						<p class="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+					</div>
+					<i class="icon fwicon-chevron-right"></i>
+				</article>
+				<article class="item itemNews" data-role="button">
+					<div class="imgThumb"><img src="lib/img/ph-160x120.gif" alt=""></div>
+					<div class="content">
+						<p class="date">6 Feburary 2013</p>
+						<p class="title">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+					</div>
+					<i class="icon fwicon-chevron-right"></i>
+				</article>
+				<article class="item itemNews" data-role="button">
+					<div class="imgThumb"><img src="lib/img/ph-160x120.gif" alt=""></div>
+					<div class="content">
+						<p class="date">25 December 2012</p>
+						<p class="title">Vestibulum tortor quam, feugiat vitae, ultricies egets</p>
+					</div>
+					<i class="icon fwicon-chevron-right"></i>
+				</article>
+				<article class="item itemNews" data-role="button">
+					<div class="imgThumb"><img src="lib/img/ph-160x120.gif" alt=""></div>
+					<div class="content">
+						<p class="date">13 March 2011</p>
+						<p class="title">Morbi in sem quis dui placerat ornare.</p>
+					</div>
+					<i class="icon fwicon-chevron-right"></i>
+				</article>
+				<article class="item itemNews" data-role="button">
+					<div class="imgThumb"><img src="lib/img/ph-160x120.gif" alt=""></div>
+					<div class="content">
+						<p class="date">5 November 2010</p>
+						<p class="title">Consectetuer adipiscing elit.</p>
+					</div>
+					<i class="icon fwicon-chevron-right"></i>
+				</article>
+			</div>
+		</div>
+	</div>
+</div><!-- /PAGE: NEWS -->
+
+<!-- PAGE: EVENTS -->
+<div id="pgEvents" class="page hidden" data-role="page">
+	<div class="pageHeader" data-role="header">
+		<span class="headerTitle">Events</span>
+		<a href="#" class="headerBtn headerBtnLeft btnMenu" data-role="button"><i class="icon fwicon-menu"></i></a>
+		<span class="headerIcon headerIconRight"><i class="icon fwicon-calendar"></i></span>
+	</div>
+	<div class="pageContent bgPattern" data-role="content">
+		<div class="scroller" data-role="scroller">
+			<div id="eventList" class="list" data-role="list">
+				<article class="item itemEvent" data-role="button">
+					<div class="dateBlock">
+						<span class="d">26</span>
+						<span class="m">NOV</span>
+					</div>
+					<div class="content">
+						<p class="title">NAPLAN Testing</p>
+					</div>
+					<i class="icon fwicon-chevron-right"></i>
+				</article>
+				<article class="item itemEvent" data-role="button">
+					<div class="dateBlock">
+						<span class="d">12</span>
+						<span class="m">OCT</span>
+					</div>
+					<div class="content">
+						<p class="title">Grandparents and Special Visitors Day</p>
+					</div>
+					<i class="icon fwicon-chevron-right"></i>
+				</article>
+				<article class="item itemEvent" data-role="button">
+					<div class="dateBlock">
+						<span class="d">20</span>
+						<span class="m">AUG</span>
+					</div>
+					<div class="content">
+						<p class="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+					</div>
+					<i class="icon fwicon-chevron-right"></i>
+				</article>
+				<article class="item itemEvent" data-role="button">
+					<div class="dateBlock">
+						<span class="d">21</span>
+						<span class="m">JAN</span>
+					</div>
+					<div class="content">
+						<p class="title">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+					</div>
+					<i class="icon fwicon-chevron-right"></i>
+				</article>
+				<article class="item itemEvent" data-role="button">
+					<div class="dateBlock">
+						<span class="d">03</span>
+						<span class="m">May</span>
+					</div>
+					<div class="content">
+						<p class="title">Vestibulum tortor quam, feugiat vitae, ultricies egets</p>
+					</div>
+					<i class="icon fwicon-chevron-right"></i>
+				</article>
+			</div>
+		</div>
+	</div>
+</div><!-- /PAGE: EVENTS -->
+
+<!-- PAGE: ARTICLE -->
+<div id="pgArticle" class="page hidden" data-role="page" data-content-type="news">
+	<div class="pageHeader" data-role="header">
+		<span class="headerTitle"></span>
+		<a href="#" class="headerBtnLbl headerBtnLblLeft btnBack" data-role="button"><i class="icon fwicon-chevron-left"></i><span class="label">Back</span></a>
+		<span class="headerIcon headerIconRight"><i class="icon"></i></span>
+	</div>
+	<h3 class="pageTitle">
+		<span class="label">26 September 2013</span>
+	</h3>
+	<div class="pageContent bgPattern" data-role="content">
+		<div class="scroller" data-role="scroller">
+			<div class="mediaView section">
+				<img class="imgThumb hidden" src="lib/img/ph-160x120.gif" alt="">
+				<img class="imgPoster" src="lib/img/ph-640x360.gif" alt="">
+				<div class="dateBlock">
+					<span class="d">26</span>
+					<span class="m">May</span>
+				</div>
+			</div>
+			<div class="contentView section padded bgSolidLite">
+				<h1>Nulla at nulla justo, eget luctus tortor facilisl duis aliquet egestas lorem elemetum sapien est.</h1>
+				<p class="date">26 September 2013</p>
+				<p>Sed nec diam eu diam <a href="#">mattis viverra</a>. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis.</p>
+				<p>Pellentesque eu est a nulla placerat dignissim. Morbi a enim in magna semper. bibendum. Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus.</p>
+				<p>Egestas lorem elemetum sapien est.</p>
+				<h2>Tortor facilisl duis aliquet egestas lorem elemetum sapien est.</h2>
+				<p>Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui.</p>
+				<p>Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis.</p>
+				<p>Pellentesque eu est a nulla placerat dignissim. Morbi a enim in magna semper. bibendum. Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus.</p>
+				<p>Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui.</p>
+				<h3>Lorem elemetum sapien est.</h3>
+				<p>Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis.</p>
+				<h4>Morbi euismod magna</h4>
+				<p>Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui.</p>
+				<ul>
+					<li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
+					<li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
+					<li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.
+						<ul>
+							<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+							<li>Aliquam tincidunt mauris eu risus.</li>
+							<li>Vestibulum auctor dapibus neque.</li>
+						</ul>
+					</li>
+					<li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
+				</ul>
+				<h4>Nulla fringilla</h4>
+				<p>Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui.</p>
+				<ol>
+					<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+					<li>Aliquam tincidunt mauris eu risus.</li>
+					<li>Vestibulum auctor dapibus neque.</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</div><!-- /PAGE: ARTICLE -->
+
+<!-- PAGE: NEWSLETTER -->
+<div id="pgNewsletters" class="page hidden" data-role="page">
+	<div class="pageHeader" data-role="header">
+		<span class="headerTitle">Newsletters</span>
+		<a href="#" class="headerBtn headerBtnLeft btnMenu" data-role="button"><i class="icon fwicon-menu"></i></a>
+		<span class="headerIcon headerIconRight"><i class="icon fwicon-speech"></i></span>
+	</div>
+	<div class="pageContent bgPattern" data-role="content">
+		<div class="scroller" data-role="scroller">
+			<div id="newsletterList" class="list" data-role="list">
+				<article class="item itemNewsletter" data-role="button">
+					<div class="content">
+						<p class="date">12 August 2013</p>
+						<p class="title">NAPLAN Testing</p>
+					</div>
+					<i class="icon iconLabel fwicon-download" data-content="1.2mb"></i>
+				</article>
+				<article class="item itemNewsletter" data-role="button">
+					<div class="content">
+						<p class="date">6 June 2013</p>
+						<p class="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+					</div>
+					<i class="icon iconLabel fwicon-download" data-content="2.2mb"></i>
+				</article>
+				<article class="item itemNewsletter" data-role="button">
+					<div class="content">
+						<p class="date">20 November 2013</p>
+						<p class="title">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+					</div>
+					<i class="icon iconLabel fwicon-download" data-content="2.2mb"></i>
+				</article>
+				<article class="item itemNewsletter" data-role="button">
+					<div class="content">
+						<p class="date">18 March 2013</p>
+						<p class="title">Vestibulum tortor quam, feugiat vitae, ultricies egets</p>
+					</div>
+					<i class="icon iconLabel fwicon-download" data-content="2.2mb"></i>
+				</article>
+				<article class="item itemNewsletter" data-role="button">
+					<div class="content">
+						<p class="date">12 August 2013</p>
+						<p class="title">NAPLAN Testing</p>
+					</div>
+					<i class="icon iconLabel fwicon-download" data-content="1.2mb"></i>
+				</article>
+				<article class="item itemNewsletter" data-role="button">
+					<div class="content">
+						<p class="date">6 June 2013</p>
+						<p class="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+					</div>
+					<i class="icon iconLabel fwicon-download" data-content="2.2mb"></i>
+				</article>
+				<article class="item itemNewsletter" data-role="button">
+					<div class="content">
+						<p class="date">20 November 2013</p>
+						<p class="title">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+					</div>
+					<i class="icon iconLabel fwicon-download" data-content="2.2mb"></i>
+				</article>
+				<article class="item itemNewsletter" data-role="button">
+					<div class="content">
+						<p class="date">18 March 2013</p>
+						<p class="title">Vestibulum tortor quam, feugiat vitae, ultricies egets</p>
+					</div>
+					<i class="icon iconLabel fwicon-download" data-content="2.2mb"></i>
+				</article>
+				<article class="item itemNewsletter" data-role="button">
+					<div class="content">
+						<p class="date">12 August 2013</p>
+						<p class="title">NAPLAN Testing</p>
+					</div>
+					<i class="icon iconLabel fwicon-download" data-content="1.2mb"></i>
+				</article>
+				<article class="item itemNewsletter" data-role="button">
+					<div class="content">
+						<p class="date">6 June 2013</p>
+						<p class="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+					</div>
+					<i class="icon iconLabel fwicon-download" data-content="2.2mb"></i>
+				</article>
+				<article class="item itemNewsletter" data-role="button">
+					<div class="content">
+						<p class="date">20 November 2013</p>
+						<p class="title">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+					</div>
+					<i class="icon iconLabel fwicon-download" data-content="2.2mb"></i>
+				</article>
+				<article class="item itemNewsletter" data-role="button">
+					<div class="content">
+						<p class="date">18 March 2013</p>
+						<p class="title">Vestibulum tortor quam, feugiat vitae, ultricies egets</p>
+					</div>
+					<i class="icon iconLabel fwicon-download" data-content="2.2mb"></i>
+				</article>
+			</div>
+		</div>
+	</div>
+</div><!-- /PAGE: NEWSLETTER -->
+
+<!-- PAGE: GALLERY -->
+<div id="pgGallery" class="page hidden" data-role="page">
+	<div class="pageHeader" data-role="header">
+		<span class="headerTitle">Gallery</span>
+		<a href="#" class="headerBtn headerBtnLeft btnMenu" data-role="button"><i class="icon fwicon-menu"></i></a>
+		<span class="headerIcon headerIconRight"><i class="icon fwicon-image"></i></span>
+	</div>
+	<div class="pageNav" data-role="nav">
+		<nav class="navTabs navTabs3">
+			<a href="#" class="btnTab current" data-role="button"><span class="label">Show All</span></a>
+			<a href="#" class="btnTab" data-role="button"><i class="icon iconInline iconInlineLeft fwicon-camera"></i><span class="label">Photos</span></a>
+			<a href="#" class="btnTab" data-role="button"><i class="icon iconInline iconInlineLeft fwicon-video"></i><span class="label">Videos</span></a>
+		</nav>
+	</div>
+	<div class="pageContent bgPattern" data-role="content">
+		<div class="scroller" data-role="scroller">
+			<div id="galleryList" class="list" data-role="list">
+				<article class="item itemGallery" data-role="button">
+					<img class="imgPoster" src="lib/img/ph-317x238.gif" alt="">
+					<div class="content">
+						<p class="date">12 August 2013</p>
+						<p class="title">Nulla at nulla justo facilisl duis eusmod</p>
+						<i class="icon iconLabel fwicon-view" data-content="View Gallery"></i>
+					</div>
+				</article>
+				<article class="item itemGallery itemGalleryVideo" data-role="button">
+					<img class="imgPoster" src="lib/img/ph-317x238.gif" alt="">
+					<i class="iconPoster icon fwicon-play"></i>
+					<div class="content">
+						<p class="date">12 March 2013</p>
+						<p class="title">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+						<i class="icon iconLabel fwicon-view" data-content="View Video"></i>
+					</div>
+				</article>
+				<article class="item itemGallery" data-role="button">
+					<img class="imgPoster" src="lib/img/ph-317x238.gif" alt="">
+					<i class="iconPoster icon fwicon-play"></i>
+					<div class="content">
+						<p class="date">12 August 2013</p>
+						<p class="title">Nulla at nulla justo facilisl duis eusmod</p>
+						<i class="icon iconLabel fwicon-view" data-content="View Gallery"></i>
+					</div>
+				</article>
+				<article class="item itemGallery itemGalleryVideo" data-role="button">
+					<img class="imgPoster" src="lib/img/ph-317x238.gif" alt="">
+					<i class="iconPoster icon fwicon-play"></i>
+					<div class="content">
+						<p class="date">12 March 2013</p>
+						<p class="title">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+						<i class="icon iconLabel fwicon-view" data-content="View Video"></i>
+					</div>
+				</article>
+				<article class="item itemGallery" data-role="button">
+					<img class="imgPoster" src="lib/img/ph-317x238.gif" alt="">
+					<div class="content">
+						<p class="date">12 August 2013</p>
+						<p class="title">Nulla at nulla justo facilisl duis eusmod</p>
+						<i class="icon iconLabel fwicon-view" data-content="View Gallery"></i>
+					</div>
+				</article>
+				<article class="item itemGallery itemGalleryVideo" data-role="button">
+					<img class="imgPoster" src="lib/img/ph-317x238.gif" alt="">
+					<div class="content">
+						<p class="date">12 March 2013</p>
+						<p class="title">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+						<i class="icon iconLabel fwicon-view" data-content="View Video"></i>
+					</div>
+				</article>
+				<article class="item itemGallery" data-role="button">
+					<img class="imgPoster" src="lib/img/ph-317x238.gif" alt="">
+					<div class="content">
+						<p class="date">12 August 2013</p>
+						<p class="title">Nulla at nulla justo facilisl duis eusmod</p>
+						<i class="icon iconLabel fwicon-view" data-content="View Gallery"></i>
+					</div>
+				</article>
+				<article class="item itemGallery itemGalleryVideo" data-role="button">
+					<img class="imgPoster" src="lib/img/ph-317x238.gif" alt="">
+					<i class="iconPoster icon fwicon-play"></i>
+					<div class="content">
+						<p class="date">12 March 2013</p>
+						<p class="title">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+						<i class="icon iconLabel fwicon-view" data-content="View Video"></i>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+</div><!-- /PAGE: GALLERY -->
+
+<!-- PAGE: CONTACT -->
+<div id="pgContact" class="page hidden" data-role="page">
+	<div class="pageHeader" data-role="header">
+		<span class="headerTitle">Contact</span>
+		<a href="#" class="headerBtn headerBtnLeft btnMenu" data-role="button"><i class="icon fwicon-menu"></i></a>
+		<span class="headerIcon headerIconRight"><i class="icon fwicon-contact"></i></span>
+	</div>
+	<div class="pageContent bgPattern" data-role="content">
+		<div id="contactList" class="list section padded acenter" data-role="list">
+			<a href="tel:+61398665358" class="btnCap" data-role="button"><i class="icon fwicon-phone"></i><span class="label">Phone School</span></a>
+			<a href="mailto:johnny.xu@fraynework.com.au" class="btnCap" data-role="button"><i class="icon fwicon-mail"></i><span class="label">Send an email</span></a>
+			<a href="http://maps.apple.com/?q=55+Barry+Street,Carlton,Melbourne,Victoria,Australia" class="btnCap" data-role="button"><i class="icon fwicon-marker"></i><span class="label">View map</span></a>
+		</div>
+		<div id="contactInfo" class="bgGradientLite">
+			<h3 class="title" data-role="title">
+				<i class="icon fwicon-info"></i><span class="label">More information</span>
+			</h3>
+			<div class="scroller" data-role="scroller">
+				<div class="contentView section padded">
+					<p class="small"><b>Nulla at nulla justo, eget luctus tortor facilisl duis aliquet egestas lorem elemetum sapien est.</b></p>
+					<p class="small">Sed nec diam eu diam <a href="#">mattis viverra</a>. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis.</p>
+					<p class="small">Pellentesque eu est a nulla placerat dignissim. Morbi a enim in magna semper. bibendum. Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus.</p>
+					<p class="small"><b>Egestas lorem elemetum sapien est.</b></p>
+					<p class="small">Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui.</p>
+					<p class="small">Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis.</p>
+					<p class="small">Pellentesque eu est a nulla placerat dignissim. Morbi a enim in magna semper. bibendum. Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus.</p>
+					<p class="small">Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!-- /PAGE: CONTACT -->
+
+<!-- LOADER -->
+<div id="loader hidden"></div>
+
+<!-- JS:APP -->
+<script src="lib/js/app-utils.js"></script>
+<script src="lib/js/app-data.js"></script>
+<script src="lib/js/app-view.js"></script>
+<script src="lib/js/app.js"></script>
+<script src="lib/js/app-demo.js"></script>
+<!-- JS:CUSTOM -->
+<script>
+</script>
+</body>
+</html>
