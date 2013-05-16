@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* ----------------------------------------------------------------------------------- 
+   @font-face definition
+   ----------------------------------------------------------------------------------- */
+
+@font-face { 
+	font-family:"fwicon"; 
+	src:url('fwicon.ttf') format('truetype'), 
+		url('fwicon.svg#fwicon') format('svg'); 
+	font-weight:normal; 
+	font-style:normal; }
+
+/* ----------------------------------------------------------------------------------- 
+   icon generic
+   ----------------------------------------------------------------------------------- */
+   
+[class^="fwicon-"]:before,
+[class*=" fwicon-"]:before { 
+	font-family:'fwicon'; 
+	font-style:normal; 
+	font-weight:normal; 
+	text-align:center; 
+	text-decoration:none;
+	-webkit-font-smoothing: antialiased;
+	speak:none; }
+
+/* ----------------------------------------------------------------------------------- 
+   fwicon classes
+   ----------------------------------------------------------------------------------- */
+
+.fwicon-view:before					{ content: "\e000"; }
+.fwicon-video:before				{ content: "\e001"; }
+.fwicon-users:before				{ content: "\e002"; }
+.fwicon-user:before					{ content: "\e003"; }
+.fwicon-tick:before					{ content: "\e004"; }
+.fwicon-star:before					{ content: "\e005"; }
+.fwicon-speech:before				{ content: "\e006"; }
+.fwicon-scroll:before				{ content: "\e007"; }
+.fwicon-plus:before					{ content: "\e008"; }
+.fwicon-play:before					{ content: "\e009"; }
+.fwicon-phone:before				{ content: "\e00a"; }
+.fwicon-minus:before				{ content: "\e00b"; }
+.fwicon-menu:before					{ content: "\e00c"; }
+.fwicon-marker:before				{ content: "\e00d"; }
+.fwicon-mail:before					{ content: "\e00e"; }
+.fwicon-link:before					{ content: "\e00f"; }
+.fwicon-key:before					{ content: "\e010"; }
+.fwicon-info:before					{ content: "\e011"; }
+.fwicon-image:before				{ content: "\e012"; }
+.fwicon-horn:before					{ content: "\e013"; }
+.fwicon-heart:before				{ content: "\e014"; }
+.fwicon-grid-all:before				{ content: "\e015"; }
+.fwicon-grid:before 				{ content: "\e016"; }
+.fwicon-globe:before 				{ content: "\e017"; }
+.fwicon-cross:before 				{ content: "\e018"; }
+.fwicon-contact:before 				{ content: "\e019"; }
+.fwicon-cog:before 					{ content: "\e01a"; }
+.fwicon-chevron-right:before 		{ content: "\e01b"; }
+.fwicon-chevron-left:before 		{ content: "\e01c"; }
+.fwicon-checked:before 				{ content: "\e01d"; }
+.fwicon-camera:before 				{ content: "\e01e"; }
+.fwicon-calendar:before 			{ content: "\e01f"; }
+.fwicon-bell:before 				{ content: "\e020"; }
+.fwicon-article:before 				{ content: "\e021"; }
+.fwicon-download:before 			{ content: "\e022"; }
