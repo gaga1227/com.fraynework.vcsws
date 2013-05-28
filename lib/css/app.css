@@ -144,7 +144,7 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 	.pageHeader .headerTitle {
 		display:block; width:auto; height:auto; margin:0 80px; padding:0; overflow:hidden;
 		color:#fff; text-shadow:0px 1px 0px rgba(0,0,0,0.1); white-space:nowrap; text-overflow:ellipsis;
-		font-family:'SourceSansPro',sans-serif; font-size:22px; font-weight:700; line-height:50px; text-align:center; }
+		font-size:22px; font-weight:700; line-height:50px; text-align:center; }
 
 	/* -------------------------------------------------------------------------- */
 	/* headerBtn */
@@ -158,8 +158,8 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 		.pageHeader .headerBtn .icon {
 			top:50%; width:26px; height:26px; margin:-13px 0 0 0; padding:0; overflow:hidden;
 			font-size:26px; line-height:1em; }
-		.pageHeader .headerBtnLeft .icon { left:15px; }
-		.pageHeader .headerBtnRight .icon { right:15px; }
+		.pageHeader .headerBtnLeft .icon { left:10px; }
+		.pageHeader .headerBtnRight .icon { right:10px; }
 
 	/* interaction */
 	.pageHeader .headerBtn.active {
@@ -175,18 +175,18 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 
 		/* icon */
 		.pageHeader .headerBtnLbl .icon {
-			top:50%; width:10px; height:10px; margin:-5px 0 0 0; padding:0; overflow:hidden;
-			font-size:10px; line-height:1em; }
-		.pageHeader .headerBtnLblLeft .icon { left:15px; }
-		.pageHeader .headerBtnLblRight .icon { right:15px; }
+			top:50%; width:14px; height:14px; margin:-8px 0 0 0; padding:0; overflow:hidden;
+			font-size:14px; line-height:1em; }
+		.pageHeader .headerBtnLblLeft .icon { left:10px; }
+		.pageHeader .headerBtnLblRight .icon { right:10px; }
 
 		/* label */
 		.pageHeader .headerBtnLbl .label {
 			display:block; width:auto; height:auto; padding:0; overflow:hidden;
 			white-space:nowrap; text-overflow:ellipsis;
-			font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; line-height:50px; }
-		.pageHeader .headerBtnLblLeft .label { margin:0 5px 0 30px; }
-		.pageHeader .headerBtnLblRight .label { margin:0 30px 0 5px; }
+			font-family:'Montserrat',sans-serif; font-size:14px; font-weight:700; line-height:50px; }
+		.pageHeader .headerBtnLblLeft .label { margin:0 5px 0 25px; }
+		.pageHeader .headerBtnLblRight .label { margin:0 25px 0 5px; }
 
 	/* interaction */
 	.pageHeader .headerBtnLbl.active {
@@ -204,8 +204,8 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 		.pageHeader .headerIcon .icon {
 			top:50%; width:30px; height:30px; margin:-15px 0 0 0; padding:0; overflow:hidden;
 			font-size:30px; line-height:28px; }
-		.pageHeader .headerIconLeft .icon { left:15px; }
-		.pageHeader .headerIconRight .icon { right:15px; }
+		.pageHeader .headerIconLeft .icon { left:10px; }
+		.pageHeader .headerIconRight .icon { right:10px; }
 
 
 /* ==========================================================================
@@ -228,7 +228,7 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 			display:block; position:relative; width:auto; height:30px; margin:0; padding:0 15px; overflow:hidden; float:left;
 			color:#444; border-left:1px solid rgba(255,255,255,0.8); border-right:1px solid rgba(0,0,0,0.1); text-shadow:0 1px 0 rgba(255,255,255,0.5);
 			white-space:nowrap; text-overflow:ellipsis;
-			font-family:'Montserrat',sans-serif; font-size:8px; font-weight:700; line-height:30px; text-align:center; text-transform:uppercase;
+			font-family:'Montserrat',sans-serif; font-size:9px; font-weight:700; line-height:30px; text-align:center; text-transform:uppercase;
 			/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
 			/*background-gradient*/
 			background-color:#fff;
@@ -274,8 +274,9 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 /* -------------------------------------------------------------------------- */
 /* container */
 .pageTitle {
-	position:absolute; top:0; left:0; width:100%; height:auto; margin:0; padding:0 20px; overflow:hidden;
+	position:absolute; top:0; left:0; width:100%; height:auto; margin:0; padding:0 12px; overflow:hidden;
 	color:#444; border-top:1px solid #f2f2f2; border-bottom:1px solid #c4c4c4; text-shadow:0px 1px 0px rgba(255,255,255,0.5);
+	/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
 	/*background-gradient*/
 	background-color:#fff;
 	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.2)));
@@ -284,10 +285,16 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 	background-image:-o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
 	background-image:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); }
 
-	/* label */
-	.pageTitle > .label {
-		display:block; width:auto; height:auto; overflow:hidden;
-		color:#444; font-family:'SourceSansPro',sans-serif; font-size:14px; font-weight:400; line-height:33px; }
+	/* common */
+	.pageTitle > .label,
+	.pageTitle > .sublabel { 
+		display:inline-block; width:auto; height:auto; overflow:hidden;
+		color:#888; text-transform:uppercase; vertical-align:middle; white-space:nowrap;
+		font-family:'Montserrat',sans-serif; font-size:11px; font-weight:400; line-height:33px; }
+	
+	/* labels */
+	.pageTitle > .label { font-weight:700; }
+	.pageTitle > .sublabel { color:#999; font-size:9px; line-height:9px; border-left:1px solid #999; margin:12px 6px; padding-left:6px; }
 
 
 /* ==========================================================================
@@ -356,7 +363,7 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 		.menu .title .label {
 			display:block; width:auto; height:auto; margin:15px; padding:0; overflow:hidden;
 			color:#fff; text-shadow:0 1px 0 rgba(0,0,0,0.5); white-space:nowrap; text-overflow:ellipsis;
-			font-family:'SourceSansPro',sans-serif; font-size:20px; font-weight:600; line-height:20px; }
+			font-size:20px; font-weight:600; line-height:20px; }
 
 		/* btnMenu */
 		.menu .title .btnMenu {
@@ -386,8 +393,8 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 
 			/* icon */
 			.menu .menuItems .icon {
-				position:static; width:35px; height:35px; margin:15px auto 0 auto; overflow:hidden;
-				font-size:35px; line-height:1em; text-align:center; }
+				position:static; width:40px; height:40px; margin:12px auto 2px auto; overflow:hidden;
+				font-size:40px; line-height:1em; text-align:center; }
 
 			/* bubble */
 			.menu .menuItems .bubble {
@@ -395,8 +402,8 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 
 			/* label */
 			.menu .menuItems .label {
-				display:block; width:auto; height:auto; margin:9px; padding:0; overflow:hidden;
-				font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; line-height:1em; text-align:center; }
+				display:block; width:auto; height:auto; margin:0 9px; padding:0; overflow:hidden;
+				font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; line-height:1em; text-align:center; }
 
 		/* interaction */
 		.menu .menuItem.active {
@@ -452,9 +459,9 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 
 		/* label */
 		.menuList .title .label {
-			display:block; width:auto; height:auto; margin:15px; padding:0; overflow:hidden;
+			display:block; width:auto; height:auto; margin:13px; padding:0; overflow:hidden;
 			color:#fff; text-shadow:0 1px 0 rgba(0,0,0,0.5); white-space:nowrap; text-overflow:ellipsis;
-			font-family:'SourceSansPro',sans-serif; font-size:20px; font-weight:600; line-height:20px; }
+			font-size:24px; font-weight:600; line-height:24px; }
 
 	/* -------------------------------------------------------------------------- */
 	/* scroller */
@@ -470,13 +477,13 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 		/* menuItem */
 		.menuList .menuItem {
 			display:block; position:relative; width:100%; height:42px; margin:0; padding:0 15px; overflow:hidden;
-			color:#777; background:transparent; border-top:1px solid #333; border-bottom:1px solid rgba(0,0,0,0.5);
+			color:#bbb; background:transparent; border-top:1px solid #333; border-bottom:1px solid rgba(0,0,0,0.5);
 			/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
 
 			/* icon */
 			.menuList .menuItems .icon {
-				position:static; width:24px; height:42px; padding:0; vertical-align:middle;
-				font-size:24px; line-height:40px; text-align:center; }
+				position:static; width:28px; height:42px; margin-left:-2px; padding:0; vertical-align:middle;
+				font-size:28px; line-height:40px; text-align:center; }
 
 			/* bubble */
 			.menuList .menuItems .bubble {
@@ -484,9 +491,9 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 
 			/* label */
 			.menuList .menuItems .label {
-				display:inline-block; width:auto; height:auto; margin:0 15px; padding:0; overflow:hidden;
+				display:inline-block; width:auto; height:auto; margin:0 10px; padding:0; overflow:hidden;
 				white-space:nowrap; text-overflow:ellipsis; vertical-align:middle;
-				font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700; line-height:42px; text-align:center; }
+				font-family:'Montserrat',sans-serif; font-size:15px; font-weight:700; line-height:42px; text-align:center; }
 
 		/* interaction */
 		.menuList .menuItem.active { background:#ffc423; border-color:#ffc423; }
@@ -523,15 +530,15 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 
 .dateBlock {
 	position:absolute; width:50px; height:50px; margin:0; padding:0; overflow:hidden;
-	background:rgba(255,255,255,0.7); }
+	background:rgba(255,255,255,0.9); }
 
 	/* d,m */
 	.dateBlock .d,
 	.dateBlock .m {
 		display:block; width:100%; height:auto; margin:0; padding:0; text-shadow:0px 1px 0px #fff;
-		color:#333; font-family:'SourceSansPro',sans-serif; font-weight:400; line-height:1em; text-align:center; text-transform:uppercase; }
+		color:#333; font-weight:600; line-height:1em; text-align:center; text-transform:uppercase; }
 	.dateBlock .d { margin:8px 0 0 0; font-size:30px; }
-	.dateBlock .m { margin:-4px 0 0 0; font-size:9px; }
+	.dateBlock .m { margin:-4px 0 0 0; font-size:9px; font-weight:700; }
 
 
 /* ==========================================================================
@@ -586,7 +593,7 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 	.mediaView .imgPoster { width:100%; }
 
 	/* dateBlock */
-	.mediaView .dateBlock { bottom:20px; left:20px; }
+	.mediaView .dateBlock { bottom:18px; left:12px; }
 
 
 /* ==========================================================================
@@ -596,28 +603,27 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 /* -------------------------------------------------------- */
 /* container */
 .contentView {
-	color:#333; background:none;
-	font-family:'SourceSansPro',sans-serif; }
+	color:#333; background:none; }
 
 	/* -------------------------------------------------------------------------- */
 	/* content */
 
 	/* common */
-	.contentView > :first-child	{ padding-top:0!important; }
+	.contentView > :first-child	{ /*padding-top:0!important;*/ }
 	.contentView p:last-child,
 	.contentView ul:last-child,
 	.contentView ol:last-child,
 	.contentView li:last-child 	{ margin-bottom:0!important; }
 
 	/* headings */
-	.contentView h1 			{ font-size:22px; line-height:1.10em; margin:0 0 0.60em 0; padding:0.30em 0 0 0; }
-	.contentView h2 			{ font-size:20px; line-height:1.10em; margin:0 0 0.65em 0; padding:0.32em 0 0 0; }
-	.contentView h3 			{ font-size:18px; line-height:1.15em; margin:0 0 0.70em 0; padding:0.35em 0 0 0; }
+	.contentView h1 			{ font-size:24px; line-height:1.10em; margin:0 0 0.55em 0; padding:0.275em 0 0 0; }
+	.contentView h2 			{ font-size:20px; line-height:1.10em; margin:0 0 0.65em 0; padding:0.50em 0 0 0; }
+	.contentView h3 			{ font-size:18px; line-height:1.15em; margin:0 0 0.70em 0; padding:0.40em 0 0 0; }
 	.contentView h4 			{ font-size:16px; line-height:1.15em; margin:0 0 0.80em 0; padding:0.40em 0 0 0; }
 
 	/* text */
-	.contentView p 				{ font-size:13px; line-height:1.23em; margin:0 0 1em 0; padding:0; }
-	.contentView p.small 		{ font-size:11px; line-height:1.23em; margin:0 0 0.5em 0; padding:0; }
+	.contentView p 				{ font-size:16px; line-height:1.23em; margin:0 0 1em 0; padding:0; }
+	.contentView p.small 		{ font-size:12px; line-height:1.23em; margin:0 0 0.5em 0; padding:0; }
 
 	/* link */
 	.contentView a 				{ color:#007bc0!important; text-decoration:underline!important; }
@@ -626,7 +632,7 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 	.contentView img 			{ display:block; border:0;	}
 
 	/* list */
-	.contentView li 			{ font-size:13px; line-height:1.23em; margin:0 0 0.5em 0; }
+	.contentView li 			{ font-size:16px; line-height:1.23em; margin:0 0 0.5em 0; }
 	.contentView ol,
 	.contentView ul				{ margin:0 0 1em 0; padding:0 0 0 20px; }
 	.contentView ul				{ list-style-type:disc; }
@@ -635,7 +641,7 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 
 	/* -------------------------------------------------------------------------- */
 	/* text styles */
-	.contentView .date { color:#666; font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; text-transform:uppercase; }
+	.contentView .date { color:#666; font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700; text-transform:uppercase; }
 
 
 /* ==========================================================================
@@ -744,12 +750,12 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 		.item .content .date {
 			overflow:hidden;
 			white-space:nowrap; text-overflow:ellipsis; text-transform:uppercase;
-			color:#666; font-size:8px;  line-height:20px; }
+			color:#666; font-size:9px;  line-height:18px; }
 
 		/* title */
 		.item .content .title {
 			overflow:hidden;
-			color:#333; font-size:11px; line-height:14px; }
+			color:#333; font-size:13px; font-weight:700; line-height:16px; }
 
 	/* -------------------------------------------------------------------------- */
 	/* icon */
@@ -767,18 +773,18 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 
 /* news */
 .itemNews .content { margin:0 20px 0 80px; }
-.itemNews .content .title { max-height:42px;/*3 lines*/ }
+.itemNews .content .title { max-height:48px;/*3 lines*/ }
 
 /* event */
-.itemEvent .content { margin:0 20px 0 60px; }
-.itemEvent .content .title { height:28px;/*2 lines*/ }
+.itemEvent .content { margin:0 20px 0 55px; }
+.itemEvent .content .title { height:32px;/*2 lines*/ }
 .itemEvent.active .dateBlock { background:#fff; border-color:#fff; }
 
 /* newsletter */
-.itemNewsletter .content { margin:0 40px 0 5px; }
-.itemNewsletter .content .title { height:28px;/*2 lines*/ }
+.itemNewsletter .content { margin:0 50px 0 0 }
+.itemNewsletter .content .title { height:32px;/*2 lines*/ }
 .itemNewsletter .icon {
-	width:35px; height:35px; margin:-18px 0 0 0; padding:0; overflow:hidden;
+	right:6px; width:35px; height:35px; margin:-18px 0 0 0; padding:0; overflow:hidden;
 	color:#444; font-size:22px; line-height:1em; }
 .itemNewsletter .iconLabel:after {
 	display:block; width:100%;
@@ -851,7 +857,7 @@ section,
 
 /* padded box */
 .padded {
-	padding:20px;
+	padding:12px;
 	/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
 
 
@@ -862,17 +868,17 @@ section,
 /* -------------------------------------------------------------------------- */
 /* common */
 [data-role="title"] {
-	position:relative; width:auto; height:auto; margin:0; padding:0; overflow:hidden;
+	display:block; position:relative; width:auto; height:auto; margin:0; padding:0; overflow:hidden;
 	color:#fff; text-shadow:0 1px 0 rgba(0,0,0,0.5); }
 
 	/* icon */
 	[data-role="title"] > .icon {
-		top:0; right:0; width:50px; overflow:hidden; }
+		top:0; right:0; width:40px; overflow:hidden; }
 
 	/* label */
 	[data-role="title"] > .label {
-		display:block; width:auto; height:auto; margin:0 50px 0 20px; padding:0; overflow:hidden;
-		color:#fff;  white-space:nowrap; text-overflow:ellipsis;
+		display:block; width:auto; height:auto; margin:0 40px 0 13px; padding:0; overflow:hidden;
+		color:#fff; white-space:nowrap; text-overflow:ellipsis;
 		font-family:'Montserrat',sans-serif; font-weight:700; }
 	[data-role="title"] > .icon + .label {
 		margin-right:20px; }
@@ -919,7 +925,7 @@ h3[data-role="title"] > .icon { height:35px; font-size:15px; line-height:35px; }
 	.btnCap .label {
 		display:block; overflow:hidden;
 		white-space:nowrap; text-overflow:ellipsis;
-		font-family:'Montserrat'; font-size:13px; font-weight:700; line-height:42px; }
+		font-family:'Montserrat'; font-size:15px; font-weight:700; line-height:42px; }
 
 /* interaction */
 .btnCap.active { background-color:#006195; }
@@ -1087,7 +1093,7 @@ h3[data-role="title"] > .icon { height:35px; font-size:15px; line-height:35px; }
 /* contactList */
 #contactList { width:100%; height:240px; }
 #contactList .btnCap { width:80%; }
-#contactList .btnCap:first-child { margin-top:25px; }
+#contactList .btnCap:first-child { margin-top:35px; }
 
 /* contactInfo */
 #contactInfo { position:absolute; top:240px; left:0; bottom:0; width:100%; height:auto; overflow:hidden; }
