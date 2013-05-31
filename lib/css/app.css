@@ -215,7 +215,7 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 /* -------------------------------------------------------------------------- */
 /* container */
 .pageNav {
-	position:absolute; top:0; left:0; width:100%; height:30px; margin:0; padding:0; overflow:hidden; }
+	position:absolute; top:0; left:0; width:100%; height:40px; margin:0; padding:0; overflow:hidden; }
 
 	/* -------------------------------------------------------------------------- */
 	/* navTabs */
@@ -225,10 +225,10 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 
 		/* btnTab */
 		.pageNav .navTabs .btnTab {
-			display:block; position:relative; width:auto; height:30px; margin:0; padding:0 15px; overflow:hidden; float:left;
+			display:block; position:relative; width:auto; height:40px; margin:0; padding:0 15px; overflow:hidden; float:left;
 			color:#444; border-left:1px solid rgba(255,255,255,0.8); border-right:1px solid rgba(0,0,0,0.1); text-shadow:0 1px 0 rgba(255,255,255,0.5);
 			white-space:nowrap; text-overflow:ellipsis;
-			font-family:'Montserrat',sans-serif; font-size:9px; font-weight:700; line-height:30px; text-align:center; text-transform:uppercase;
+			font-family:'Montserrat',sans-serif; font-size:9px; font-weight:700; line-height:40px; text-align:center; text-transform:uppercase;
 			/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
 			/*background-gradient*/
 			background-color:#fff;
@@ -308,7 +308,7 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 .pageHeader + .pageNav,
 .pageHeader + .pageTitle,
 .pageHeader + .pageContent { top:50px; }
-.pageHeader + .pageNav + .pageContent { top:80px; }
+.pageHeader + .pageNav + .pageContent { top:90px; }
 .pageHeader + .pageTitle + .pageContent { top:85px; }
 
 	/* -------------------------------------------------------------------------- */
@@ -476,14 +476,14 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 
 		/* menuItem */
 		.menuList .menuItem {
-			display:block; position:relative; width:100%; height:42px; margin:0; padding:0 15px; overflow:hidden;
+			display:block; position:relative; width:100%; height:45px; margin:0; padding:0 15px; overflow:hidden;
 			color:#bbb; background:transparent; border-top:1px solid #333; border-bottom:1px solid rgba(0,0,0,0.5);
 			/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
 
 			/* icon */
 			.menuList .menuItems .icon {
-				position:static; width:28px; height:42px; margin-left:-2px; padding:0; vertical-align:middle;
-				font-size:28px; line-height:40px; text-align:center; }
+				position:static; width:28px; height:45px; margin-left:-2px; padding:0; vertical-align:middle;
+				font-size:28px; line-height:45px; text-align:center; }
 
 			/* bubble */
 			.menuList .menuItems .bubble {
@@ -493,7 +493,7 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 			.menuList .menuItems .label {
 				display:inline-block; width:auto; height:auto; margin:0 10px; padding:0; overflow:hidden;
 				white-space:nowrap; text-overflow:ellipsis; vertical-align:middle;
-				font-family:'Montserrat',sans-serif; font-size:15px; font-weight:700; line-height:42px; text-align:center; }
+				font-family:'Montserrat',sans-serif; font-size:15px; font-weight:700; line-height:45px; text-align:center; }
 
 		/* interaction */
 		.menuList .menuItem.active { background:#ffc423; border-color:#ffc423; }
@@ -1091,12 +1091,12 @@ h3[data-role="title"] > .icon { height:35px; font-size:15px; line-height:35px; }
    ========================================================================== */
 
 /* contactList */
-#contactList { width:100%; height:240px; }
+#contactList { width:100%; height:220px; }
 #contactList .btnCap { width:80%; }
-#contactList .btnCap:first-child { margin-top:35px; }
+#contactList .btnCap:first-child { margin-top:25px; }
 
 /* contactInfo */
-#contactInfo { position:absolute; top:240px; left:0; bottom:0; width:100%; height:auto; overflow:hidden; }
+#contactInfo { position:absolute; top:220px; left:0; bottom:0; width:100%; height:auto; overflow:hidden; }
 #contactInfo > .title + .scroller { position:absolute; top:35px; left:0; bottom:0; overflow:hidden; }
 
 
