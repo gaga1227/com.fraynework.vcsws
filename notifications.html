@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>Victoria Catholic School Mobile Services</title>
+<!-- CSS:VENDOR -->
+<!-- CSS:FONT -->
+<link rel="stylesheet" href="lib/font/montserrat-webfont/font.css">
+<link rel="stylesheet" href="lib/font/source-sans-pro-webfont/font.css">
+<!-- CSS:ICON -->
+<link rel="stylesheet" href="lib/icon/fontawesome/icon.css">
+<link rel="stylesheet" href="lib/icon/fwicon/icon.css">
+<!-- CSS:LIB -->
+<link rel="stylesheet" href="lib/css/normalize.css">
+<link rel="stylesheet" href="lib/css/animate.css">
+<!-- CSS:APP -->
+<link rel="stylesheet" href="lib/css/app.css">
+<!-- CSS:CUSTOM -->
+<style>
+</style>
+<!-- JS:PHONEGAP -->
+<!--
+<script src="phonegap.js"></script>
+<script src="PushNotification.js"></script>
+-->
+<!-- JS:VENDOR -->
+<script src="lib/js/zepto-1.0.all.min.js"></script>
+<!-- JS:LIB -->
+<script src="lib/js/fastclick.js"></script>
+<script src="lib/js/ftscroller.js"></script>
+</head>
+<body class="bgPattern">
+
+<!-- PAGE: NOTIFICATIONS -->
+<div id="pgNotifs" class="page" data-role="page">
+	<div class="pageHeader" data-role="header">
+		<span class="headerTitle">Notifications</span>
+		<a href="menu.html" class="headerBtn headerBtnLeft btnMenu" data-role="button"><i class="icon fwicon-menu"></i></a>
+		<span class="headerIcon headerIconRight"><i class="icon fwicon-horn"></i></span>
+	</div>
+	<div class="pageContent bgPattern" data-role="content">
+		<div class="scroller" data-role="scroller">
+			<div id="notifList" class="list" data-role="list">
+				<article class="item itemNotif" data-role="button" data-ctrl-type="toggle">
+					<i class="icon iconBadge fwicon-link"></i>
+					<div class="content">
+						<p class="date">12 August 2013</p>
+						<p class="title">School Closure Day – Wellbeing/Faith Development</p>
+						<div class="extra">
+							<p>Date: 26 June 2013<br>Time: 1:00pm - 7:30pm<br>Place: St John's Primary School</p>
+							<p>Individual times for interviews will be given closer to the date.</p>
+							<p>School Closure Day – Wellbeing /Faith Development</p>
+						</div>
+					</div>
+					<i class="icon iconToggle fwicon-plus"></i>
+					<i class="icon iconToggle fwicon-minus"></i>
+				</article>
+				<article class="item itemNotif" data-role="button" data-ctrl-type="toggle">
+					<i class="icon iconBadge fwicon-star bgc-d-green"></i>
+					<div class="content">
+						<p class="date">06 November 2013</p>
+						<p class="title">Parent Teacher Interviews</p>
+						<div class="extra">
+							<p>Date: 26 June 2013<br>Time: 1:00pm - 7:30pm<br>Place: St John's Primary School</p>
+							<p>Individual times for interviews will be given closer to the date.</p>
+						</div>
+					</div>
+					<i class="icon iconToggle fwicon-plus"></i>
+					<i class="icon iconToggle fwicon-minus"></i>
+				</article>
+				<article class="item itemNotif" data-role="button" data-ctrl-type="toggle">
+					<i class="icon iconBadge fwicon-key bgc-green"></i>
+					<div class="content">
+						<p class="date">22 September 2013</p>
+						<p class="title">First Reconciliation Family Workshop Night 7:00pm</p>
+						<div class="extra">
+							<p>Date: 26 June 2013<br>Time: 1:00pm - 7:30pm<br>Place: St John's Primary School</p>
+							<p>Individual times for interviews will be given closer to the date.</p>
+							<p>School Closure Day – Wellbeing /Faith Development</p>
+						</div>
+					</div>
+					<i class="icon iconToggle fwicon-plus"></i>
+					<i class="icon iconToggle fwicon-minus"></i>
+				</article>
+				<article class="item itemNotif" data-role="button" data-ctrl-type="toggle">
+					<i class="icon iconBadge fwicon-bell bgc-blue"></i>
+					<div class="content">
+						<p class="date">11 March 2013</p>
+						<p class="title">Cybersmart – Parent workshop evening 90 minutes</p>
+						<div class="extra">
+							<p>Date: 26 June 2013<br>Time: 1:00pm - 7:30pm<br>Place: St John's Primary School</p>
+							<p>Individual times for interviews will be given closer to the date.</p>
+						</div>
+					</div>
+					<i class="icon iconToggle fwicon-plus"></i>
+					<i class="icon iconToggle fwicon-minus"></i>
+				</article>
+				<article class="item itemNotif" data-role="button" data-ctrl-type="toggle">
+					<i class="icon iconBadge fwicon-checked bgc-yellow"></i>
+					<div class="content">
+						<p class="date">16 October 2013</p>
+						<p class="title">Confirmation Commitment Mass 9am</p>
+						<div class="extra">
+							<p>Date: 26 June 2013<br>Time: 1:00pm - 7:30pm<br>Place: St John's Primary School</p>
+							<p>Individual times for interviews will be given closer to the date.</p>
+							<p>School Closure Day – Wellbeing /Faith Development</p>
+						</div>
+					</div>
+					<i class="icon iconToggle fwicon-plus"></i>
+					<i class="icon iconToggle fwicon-minus"></i>
+				</article>
+				<article class="item itemNotif" data-role="button" data-ctrl-type="toggle">
+					<i class="icon iconBadge fwicon-heart bgc-purple"></i>
+					<div class="content">
+						<p class="date">16 October 2013</p>
+						<p class="title">Queen's Birthday Public Holiday</p>
+						<div class="extra">
+							<p>Date: 26 June 2013<br>Time: 1:00pm - 7:30pm<br>Place: St John's Primary School</p>
+							<p>Individual times for interviews will be given closer to the date.</p>
+							<p>School Closure Day – Wellbeing /Faith Development</p>
+						</div>
+					</div>
+					<i class="icon iconToggle fwicon-plus"></i>
+					<i class="icon iconToggle fwicon-minus"></i>
+				</article>			
+			</div>
+		</div>
+	</div>
+</div><!-- /PAGE: NEWSLETTER -->
+
+<!-- JS:APP -->
+<script src="lib/js/app-utils.js"></script>
+<script src="lib/js/app-data.js"></script>
+<script src="lib/js/app-view.js"></script>
+<script src="lib/js/app-demo.js"></script>
+<script src="lib/js/app.js"></script>
+<!-- JS:CUSTOM -->
+<script>
+</script>
+</body>
+</html>

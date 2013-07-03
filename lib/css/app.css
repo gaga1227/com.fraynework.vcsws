@@ -93,41 +93,7 @@ body {
 /* pageBg */
 .pageBg {
 	background:#ffc423 url(../img/brand-bg.png) center top no-repeat; background-size:cover; }
-
-/* page */
-.page {
-	/*transition*/
-	/*-webkit-transform:translate3d(0,0,0);*/
-	-webkit-transition:-webkit-transform 0.3s ease-in-out;
-	-moz-transition:-moz-transform 0.3s ease-in-out;
-	-o-transition:-o-transform 0.3s ease-in-out;
-	transition:transform 0.3s ease-in-out; }
-
-/* interaction */
-.page.currentPage {
-	z-index:10000; }
-
-/* interaction - menu */
-.page.currentPage.menuActive {
-	/*transform*/
-	-webkit-transform:translate(83%,0);
-	-moz-transform:translate(83%,0);
-	-ms-transform:translate(83%,0);
-	-o-transform:translate(83%,0);
-	transform:translate(83%,0); }
-#pgMenu {
-	width:84%;
-	/*transform*/
-	-webkit-transform:translate(0,0)!important;
-	-moz-transform:translate(0,0)!important;
-	-ms-transform:translate(0,0)!important;
-	-o-transform:translate(0,0)!important;
-	transform:translate(0,0)!important; }
-
-/*
-#pgMenu .pageShadow 				{ display:none; }
-body.menuActive #pgMenu .pageShadow { display:block; }
-*/
+	
 
 /* ==========================================================================
    structure - PAGEHEADER
@@ -756,13 +722,56 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 		.item .content .title {
 			overflow:hidden;
 			color:#333; font-size:13px; font-weight:700; line-height:16px; }
-
+		
+		/* extra */
+		.item .content .extra { color:#444; font-weight:400; font-size:11px; }
+		.item .content .extra p { margin-top:0.5em; }
+		.item .content .extra p:first-child { margin-top:1em; }
+		
 	/* -------------------------------------------------------------------------- */
 	/* icon */
 	.item .icon {
-		top:50%; right:12px; width:8px; height:8px; margin:-4px 0 0 0; padding:0; overflow:hidden;
-		color:#444; font-size:8px; line-height:1em; }
-
+		top:50%; right:12px; width:14px; height:14px; margin:-7px 0 0 0; padding:0; overflow:hidden;
+		color:#444; font-size:14px; line-height:1em; }
+	
+	/* -------------------------------------------------------------------------- */
+	/* iconToggle */
+	.item .iconToggle { 
+		top:30px; width:14px; height:14px; margin:0; font-size:14px; }
+	
+	/* interaction */
+	.item .iconToggle 							{ display:block; }
+	.item .iconToggle + .iconToggle 			{ display:none; }
+	.item.activated .iconToggle 				{ display:none; }
+	.item.activated .iconToggle + .iconToggle	{ display:block; }
+	
+	/* -------------------------------------------------------------------------- */
+	/* iconBadge */
+	.item .iconBadge { 
+		top:16px; left:12px; right:auto; width:32px; height:32px; margin:0; 
+		color:#fff; font-size:22px; line-height:31px; text-shadow:none;
+		/*background-gradient*/
+		background-color:#666;
+		background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.1)));
+		background-image:-webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
+		background-image:-moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
+		background-image:-o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
+		background-image:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
+		/*border-radius*/-webkit-border-radius:50%; border-radius:50%;
+		/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding-box; background-clip:padding-box;
+		/*box-shadow*/
+		-webkit-box-shadow:inset 0px 1px 0px 0px rgba(0,0,0,0.1),inset 0px -1px 0px 0px rgba(255,255,255,0.9);
+		box-shadow:inset 0px 1px 0px 0px rgba(0,0,0,0.1),inset 0px -1px 0px 0px rgba(255,255,255,0.9); }
+	.android .item .iconBadge { line-height:32px; }
+		
+	/* themes */
+	.item .iconBadge.bgc-blue	 	{ background-color:#4e99ac; }
+	.item .iconBadge.bgc-l-blue 	{ background-color:#88c4db; }
+	.item .iconBadge.bgc-green 		{ background-color:#8dc63f; }
+	.item .iconBadge.bgc-d-green 	{ background-color:#1e785c; }
+	.item .iconBadge.bgc-yellow 	{ background-color:#dbb14b; }
+	.item .iconBadge.bgc-purple 	{ background-color:#c72b7e; }
+	
 /* -------------------------------------------------------------------------- */
 /* interaction */
 .item.active {
@@ -789,6 +798,14 @@ body.menuActive #pgMenu .pageShadow { display:block; }
 .itemNewsletter .iconLabel:after {
 	display:block; width:100%;
 	font-family:'Montserrat',sans-serif; font-size:8px; font-weight:700; line-height:1em; }
+
+/* notif */
+.itemNotif { height:auto; }
+.itemNotif .content { margin:0 20px 0 45px; }
+.itemNotif .content .date { color:#999; }
+.itemNotif .extra { display:none; }
+.itemNotif.activated { background:#fff; }
+.itemNotif.activated .extra { display:block; }
 
 /* -------------------------------------------------------------------------- */
 /* custom - gallery */
