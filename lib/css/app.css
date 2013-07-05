@@ -911,7 +911,7 @@ h3[data-role="title"] > .icon { height:35px; font-size:15px; line-height:35px; }
 
 
 /* ==========================================================================
-   common - ICONS
+   common - BUTTONS
    ========================================================================== */
 
 /* -------------------------------------------------------------------------- */
@@ -946,6 +946,94 @@ h3[data-role="title"] > .icon { height:35px; font-size:15px; line-height:35px; }
 
 /* interaction */
 .btnCap.active { background-color:#006195; }
+
+/* -------------------------------------------------------------------------- */
+/* btnSocial */
+.btnSocial {
+	display:block; position:absolute; top:0; left:0; width:100%; height:100%; margin:0; padding:0; overflow:hidden;
+	color:rgba(255,255,255,0.8); text-shadow:0 1px 0 rgba(0,0,0,0.3);
+	/*background-gradient*/
+	background-color:#ccc;
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.2)));
+	background-image:-webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
+	background-image:-moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
+	background-image:-o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
+	background-image:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); }
+.btnSocial.active {
+	color:rgba(255,255,255,0.5);
+	/*background-gradient*/
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,0.3)));
+	background-image:-webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 100%);
+	background-image:-moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 100%);
+	background-image:-o-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 100%);
+	background-image:linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 100%);
+	/*box-shadow*/-webkit-box-shadow:inset 0px 0px 8px 0px rgba(0,0,0,0.5); box-shadow:inset 0px 0px 8px 0px rgba(0,0,0,0.5); }
+	
+	/* common */
+	.btnSocial .icon,
+	.btnSocial .label { 
+		display:block; position:absolute; top:50%; padding:0; overflow:hidden;
+		text-align:center; }
+	
+	/* icon */
+	.btnSocial .icon { 
+		left:50%; width:140px; height:140px; margin:-80px 0 0 -70px; 
+		font-size:140px; line-height:1em; }
+		
+	/* label */
+	.btnSocial .label { 
+		left:0; width:100%; height:20px; margin:60px 0 0 0;
+		font-family:'Montserrat',sans-serif; font-size:18px; font-weight:700; line-height:20px;  }
+
+/* layout - grid */
+
+/* 1 item */
+.btnSocial:first-child:nth-last-child(n+1) 	{ height:100%; }
+/* 2 item */
+.btnSocial:first-child:nth-last-child(n+2),
+.btnSocial:first-child:nth-last-child(n+2) ~ .btnSocial { height:50%; }
+.btnSocial:first-child:nth-last-child(n+2) + .btnSocial	{ top:50%; }
+/* 3 item */
+.btnSocial:first-child:nth-last-child(n+3),
+.btnSocial:first-child:nth-last-child(n+3) ~ .btnSocial 				{ height:33.33%; }
+.btnSocial:first-child:nth-last-child(n+3) + .btnSocial 				{ top:33.33%; }
+.btnSocial:first-child:nth-last-child(n+3) + .btnSocial + .btnSocial 	{ top:66.66%; }
+/* 4 item */
+.btnSocial:first-child:nth-last-child(n+4),
+.btnSocial:first-child:nth-last-child(n+4) ~ .btnSocial 							{ height:25.00%; }
+.btnSocial:first-child:nth-last-child(n+4) + .btnSocial								{ top:25.00%; }
+.btnSocial:first-child:nth-last-child(n+4) + .btnSocial + .btnSocial 				{ top:50.00%; }
+.btnSocial:first-child:nth-last-child(n+4) + .btnSocial + .btnSocial + .btnSocial	{ top:75.00%; }
+/* 5 item */
+.btnSocial:first-child:nth-last-child(n+5),
+.btnSocial:first-child:nth-last-child(n+5) ~ .btnSocial 										{ height:20.00%; }
+.btnSocial:first-child:nth-last-child(n+5) + .btnSocial 										{ top:20.00%; }
+.btnSocial:first-child:nth-last-child(n+5) + .btnSocial + .btnSocial 							{ top:40.00%; }
+.btnSocial:first-child:nth-last-child(n+5) + .btnSocial + .btnSocial + .btnSocial 				{ top:60.00%; }
+.btnSocial:first-child:nth-last-child(n+5) + .btnSocial + .btnSocial + .btnSocial + .btnSocial 	{ top:80.00%; }
+
+/* layout - btn */
+
+/* 3 item */
+.btnSocial:first-child:nth-last-child(n+3) .icon,
+.btnSocial:first-child:nth-last-child(n+3) ~ .btnSocial .icon { width:80px; height:80px; margin:-50px 0 0 -40px; font-size:80px; }
+.btnSocial:first-child:nth-last-child(n+3) .label,
+.btnSocial:first-child:nth-last-child(n+3) ~ .btnSocial .label { font-size:16px; margin-top:30px; }
+/* 4 item */
+.btnSocial:first-child:nth-last-child(n+4) .icon,
+.btnSocial:first-child:nth-last-child(n+4) ~ .btnSocial .icon { width:60px; height:60px; margin:-40px 0 0 -30px; font-size:60px; }
+.btnSocial:first-child:nth-last-child(n+4) .label,
+.btnSocial:first-child:nth-last-child(n+4) ~ .btnSocial .label { font-size:14px; margin-top:20px; }
+/* 5 item */
+.btnSocial:first-child:nth-last-child(n+5) .icon,
+.btnSocial:first-child:nth-last-child(n+5) ~ .btnSocial .icon { width:50px; height:50px; margin:-32px 0 0 -25px; font-size:50px; }
+.btnSocial:first-child:nth-last-child(n+5) .label,
+.btnSocial:first-child:nth-last-child(n+5) ~ .btnSocial .label { font-size:12px; margin-top:15px; }
+
+/* custom */
+#btnSocialFB { background-color:#425897; }
+#btnSocialTT { background-color:#5996ab; }
+#btnSocialYT { background-color:#bf1a20; }
 
 
 /* ==========================================================================
