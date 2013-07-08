@@ -224,7 +224,7 @@ body {
 		.pageNav .navTabs .btnTab.current.active {
 			color:#fff; border:none; text-shadow:0px 0px 5px rgba(255,255,255,0.8);
 			/*background-gradient*/
-			background-color:#0076b7;
+			background-color:#007dc3;
 			background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.3)), color-stop(100%,rgba(0,0,0,0)));
 			background-image:-webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
 			background-image:-moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
@@ -616,7 +616,7 @@ body {
 
 /* -------------------------------------------------------- */
 /* container */
-.formView { position:relative; margin:0; padding:0; }
+.formView { position:relative; margin:0; padding:12px; }
 
 	/* form */
 	.formView form {
@@ -624,17 +624,18 @@ body {
 
 		/* -------------------------------------------------------- */
 		/* fieldset */
-		.formView fieldset 			{ display:block; margin:0 0 20px 0; padding:0; border:0; }
-		.formView fieldset.col50pct { width:50%; }
+		.formView fieldset 			{ display:block; position:relative; margin:0 0 0 0; padding:10px 0; border:0; }
 
 		/* -------------------------------------------------------- */
 		/* label */
 		.formView label {
 			display:block; margin:0; padding:0;
-			color:#222; vertical-align:baseline;
-			font-size:14px; font-weight:700; line-height:20px; }
-		.formView label.inline { display:inline-block; padding:0 0 0 5%; }
-
+			color:#fff; vertical-align:baseline;
+			font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; line-height:20px; }
+		.formView label.inline { 
+			display:inline-block; padding:0 20px 0 0;
+			vertical-align:middle; line-height:36px; }
+		
 		/* -------------------------------------------------------- */
 		/* input */
 		.formView input.text {
@@ -656,7 +657,36 @@ body {
 		:-moz-placeholder 				{ color:#333; }
 		::-moz-placeholder 				{ color:#333; }
 		:-ms-input-placeholder			{ color:#333; }
-
+		
+		/* -------------------------------------------------------------------------- */
+		/* select */
+		.formView select {
+			display:block; position:relative; width:auto; height:36px; margin:0; padding:0 30px 0 18px; overflow:hidden;
+			color:#444;	border:none; font-family:'Montserrat',sans-serif; font-size:15px; font-weight:700; line-height:20px;
+			/*background-gradient*/
+			background-color:#f2f2f2;
+			background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.2)));
+			background-image:-webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
+			background-image:-moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
+			background-image:-o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
+			background-image:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); 
+			/*border-radius*/-webkit-border-radius:20px; border-radius:20px;
+			/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding-box; background-clip:padding-box; }
+		
+		/* inline */
+		.formView select.inline { 
+			display:inline-block; vertical-align:middle; }
+		
+		/* interaction */
+		.formView select:focus { 
+			background-color:#fff; background-image:none;
+			/*box-shadow*/-webkit-box-shadow:0px 0px 8px 0px rgba(255,255,255,1); box-shadow:0px 0px 8px 0px rgba(255,255,255,1); }
+		
+		/* icon */
+		.formView select + .icon {
+			top:50%; right:10px; width:20px; height:20px; margin:-10px 0 0 0; padding:0; overflow:hidden;
+			color:#444; font-size:20px; line-height:20px; pointer-events:none; }
+		
 
 /* ==========================================================================
    common - ITEMS
@@ -807,6 +837,10 @@ body {
 .itemNotif.activated { background:#fff; }
 .itemNotif.activated .extra { display:block; }
 
+/* setting */
+.itemSetting { padding-top:16px; padding-bottom:16px; }
+.itemSetting .content { margin-right:90px; }
+
 /* -------------------------------------------------------------------------- */
 /* custom - gallery */
 
@@ -905,9 +939,80 @@ section,
 h2[data-role="title"] { background:#333; }
 h2[data-role="title"] > .label { font-size:18px; line-height:50px; }
 h2[data-role="title"] > .icon { height:50px; font-size:18px; line-height:50px; }
+
 h3[data-role="title"] { background:#444; }
 h3[data-role="title"] > .label { font-size:15px; line-height:35px; }
 h3[data-role="title"] > .icon { height:35px; font-size:15px; line-height:35px; }
+
+
+/* ==========================================================================
+   common - CONTROLS
+   ========================================================================== */
+
+/* -------------------------------------------------------------------------- */
+/* switch */
+.slide[data-role="switch"] { 
+	display:inline-block; position:relative; width:70px; height:30px; margin:0; padding:0; overflow:hidden;
+	background:#bbb; text-shadow:0 1px 0 rgba(0,0,0,0.2);
+	/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+	/*border-radius*/-webkit-border-radius:15px; border-radius:15px;
+	/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding-box; background-clip:padding-box;
+	/*box-shadow*/
+	-webkit-box-shadow:inset 0px 1px 0px 0px rgba(0,0,0,0.1), inset 0px -1px 0px 0px rgba(255,255,255,0.8); 
+	box-shadow:inset 0px 1px 0px 0px rgba(0,0,0,0.1), inset 0px -1px 0px 0px rgba(255,255,255,0.8);
+	/*transition*/
+	/*-webkit-transform:translate3d(0,0,0);*/
+	-webkit-transition:background-color 0.3s ease-in-out;
+	-moz-transition:background-color 0.3s ease-in-out;
+	-o-transition:background-color 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out; }
+ 
+ 	/* input */
+ 	.slide[data-role="switch"] input[type="checkbox"] { 
+		display:none; }
+	
+	/* -------------------------------------------------------------------------- */
+	/* switch-controls */
+	.slide[data-role="switch"] .switch-controls { 
+		display:table; position:absolute; top:0; left:-40px; width:110px; height:auto; margin:0; padding:0; overflow:hidden;
+		/*transition*/
+		/*-webkit-transform:translate3d(0,0,0);*/
+		-webkit-transition:left 0.3s ease-in-out;
+		-moz-transition:left 0.3s ease-in-out;
+		-o-transition:left 0.3s ease-in-out;
+		transition:left 0.3s ease-in-out; }
+		
+		/* common */
+		.slide[data-role="switch"] .switch-controls > span,
+		.slide[data-role="switch"] .switch-controls > label { vertical-align:middle; }		
+		
+		/* label */
+		.slide[data-role="switch"] .switch-controls label { 
+			display:inline-block; width:20px; height:20px; margin:4px 5px; padding:0; overflow:hidden;
+			color:#fff; background:#fff; 
+			/*border-radius*/-webkit-border-radius:50%; border-radius:50%;
+			/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding-box; background-clip:padding-box;
+			/*box-shadow*/-webkit-box-shadow:0px 4px 8px 0px rgba(0,0,0,0.3); box-shadow:0px 4px 8px 0px rgba(0,0,0,0.3); }
+		
+		/* switch-left/right */
+		.slide[data-role="switch"] .switch-left,
+		.slide[data-role="switch"] .switch-right { 
+			display:inline-block; width:40px; height:28px; margin:0; padding:0; overflow:hidden;
+			vertical-align:middle; text-align:center; }
+		
+			/* icon */
+			.slide[data-role="switch"] .icon {
+				display:inline; position:static; top:auto; right:auto; width:auto; height:auto; margin:0;
+				color:#fff; font-size:20px; line-height:28px; }
+	
+/* -------------------------------------------------------------------------- */
+/* checked */
+.slide[data-role="switch"].checked { background:#4bd763; }
+.slide[data-role="switch"].checked .switch-controls { left:0; }
+ 
+/* -------------------------------------------------------------------------- */
+/* extend */
+.itemSetting > .slide[data-role="switch"] { position:absolute; right:12px; top:50%; margin-top:-15px; }
 
 
 /* ==========================================================================
@@ -945,7 +1050,7 @@ h3[data-role="title"] > .icon { height:35px; font-size:15px; line-height:35px; }
 		font-family:'Montserrat'; font-size:15px; font-weight:700; line-height:42px; }
 
 /* interaction */
-.btnCap.active { background-color:#006195; }
+.btnCap.active { background-image:none; }
 
 /* -------------------------------------------------------------------------- */
 /* btnSocial */
