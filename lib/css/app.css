@@ -281,6 +281,8 @@ body {
 	/* scroller */
 	.pageContent > .scroller {
 		position:absolute; top:0; left:0; bottom:0; width:100%; }
+
+	/* native scroll for iOS */
 	.ios .pageContent > .scroller {
 		overflow:scroll; -webkit-overflow-scrolling:touch; }
 
