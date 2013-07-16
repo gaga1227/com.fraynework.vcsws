@@ -93,7 +93,7 @@ body {
 /* pageBg */
 .pageBg {
 	background:#ffc423 url(../img/brand-bg.png) center top no-repeat; background-size:cover; }
-	
+
 
 /* ==========================================================================
    structure - PAGEHEADER
@@ -253,11 +253,11 @@ body {
 
 	/* common */
 	.pageTitle > .label,
-	.pageTitle > .sublabel { 
+	.pageTitle > .sublabel {
 		display:inline-block; width:auto; height:auto; overflow:hidden;
 		color:#888; text-transform:uppercase; vertical-align:middle; white-space:nowrap;
 		font-family:'Montserrat',sans-serif; font-size:11px; font-weight:400; line-height:33px; }
-	
+
 	/* labels */
 	.pageTitle > .label { font-weight:700; }
 	.pageTitle > .sublabel { color:#999; font-size:9px; line-height:9px; border-left:1px solid #999; margin:12px 6px; padding-left:6px; }
@@ -281,6 +281,8 @@ body {
 	/* scroller */
 	.pageContent > .scroller {
 		position:absolute; top:0; left:0; bottom:0; width:100%; }
+	.ios .pageContent > .scroller {
+		overflow:scroll; -webkit-overflow-scrolling:touch; }
 
 
 /* ==========================================================================
@@ -632,10 +634,10 @@ body {
 			display:block; margin:0; padding:0;
 			color:#fff; vertical-align:baseline;
 			font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; line-height:20px; }
-		.formView label.inline { 
+		.formView label.inline {
 			display:inline-block; padding:0 20px 0 0;
 			vertical-align:middle; line-height:36px; }
-		
+
 		/* -------------------------------------------------------- */
 		/* input */
 		.formView input.text {
@@ -657,7 +659,7 @@ body {
 		:-moz-placeholder 				{ color:#333; }
 		::-moz-placeholder 				{ color:#333; }
 		:-ms-input-placeholder			{ color:#333; }
-		
+
 		/* -------------------------------------------------------------------------- */
 		/* select */
 		.formView select {
@@ -669,24 +671,24 @@ body {
 			background-image:-webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
 			background-image:-moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
 			background-image:-o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
-			background-image:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); 
+			background-image:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
 			/*border-radius*/-webkit-border-radius:20px; border-radius:20px;
 			/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding-box; background-clip:padding-box; }
-		
+
 		/* inline */
-		.formView select.inline { 
+		.formView select.inline {
 			display:inline-block; vertical-align:middle; }
-		
+
 		/* interaction */
-		.formView select:focus { 
+		.formView select:focus {
 			background-color:#fff; background-image:none;
 			/*box-shadow*/-webkit-box-shadow:0px 0px 8px 0px rgba(255,255,255,1); box-shadow:0px 0px 8px 0px rgba(255,255,255,1); }
-		
+
 		/* icon */
 		.formView select + .icon {
 			top:50%; right:10px; width:20px; height:20px; margin:-10px 0 0 0; padding:0; overflow:hidden;
 			color:#444; font-size:20px; line-height:20px; pointer-events:none; }
-		
+
 
 /* ==========================================================================
    common - ITEMS
@@ -752,33 +754,33 @@ body {
 		.item .content .title {
 			overflow:hidden;
 			color:#333; font-size:13px; font-weight:700; line-height:16px; }
-		
+
 		/* extra */
 		.item .content .extra { color:#444; font-weight:400; font-size:11px; }
 		.item .content .extra p { margin-top:0.5em; }
 		.item .content .extra p:first-child { margin-top:1em; }
-		
+
 	/* -------------------------------------------------------------------------- */
 	/* icon */
 	.item .icon {
 		top:50%; right:12px; width:14px; height:14px; margin:-7px 0 0 0; padding:0; overflow:hidden;
 		color:#444; font-size:14px; line-height:1em; }
-	
+
 	/* -------------------------------------------------------------------------- */
 	/* iconToggle */
-	.item .iconToggle { 
+	.item .iconToggle {
 		top:30px; width:14px; height:14px; margin:0; font-size:14px; }
-	
+
 	/* interaction */
 	.item .iconToggle 							{ display:block; }
 	.item .iconToggle + .iconToggle 			{ display:none; }
 	.item.activated .iconToggle 				{ display:none; }
 	.item.activated .iconToggle + .iconToggle	{ display:block; }
-	
+
 	/* -------------------------------------------------------------------------- */
 	/* iconBadge */
-	.item .iconBadge { 
-		top:16px; left:12px; right:auto; width:32px; height:32px; margin:0; 
+	.item .iconBadge {
+		top:16px; left:12px; right:auto; width:32px; height:32px; margin:0;
 		color:#fff; font-size:22px; line-height:31px; text-shadow:none;
 		/*background-gradient*/
 		background-color:#666;
@@ -793,7 +795,7 @@ body {
 		-webkit-box-shadow:inset 0px 1px 0px 0px rgba(0,0,0,0.1),inset 0px -1px 0px 0px rgba(255,255,255,0.9);
 		box-shadow:inset 0px 1px 0px 0px rgba(0,0,0,0.1),inset 0px -1px 0px 0px rgba(255,255,255,0.9); }
 	.android .item .iconBadge { line-height:32px; }
-		
+
 	/* themes */
 	.item .iconBadge.bgc-blue	 	{ background-color:#4e99ac; }
 	.item .iconBadge.bgc-l-blue 	{ background-color:#88c4db; }
@@ -801,7 +803,7 @@ body {
 	.item .iconBadge.bgc-d-green 	{ background-color:#1e785c; }
 	.item .iconBadge.bgc-yellow 	{ background-color:#dbb14b; }
 	.item .iconBadge.bgc-purple 	{ background-color:#c72b7e; }
-	
+
 /* -------------------------------------------------------------------------- */
 /* interaction */
 .item.active {
@@ -951,14 +953,14 @@ h3[data-role="title"] > .icon { height:35px; font-size:15px; line-height:35px; }
 
 /* -------------------------------------------------------------------------- */
 /* switch */
-.slide[data-role="switch"] { 
+.slide[data-role="switch"] {
 	display:inline-block; position:relative; width:70px; height:30px; margin:0; padding:0; overflow:hidden;
 	background:#bbb; text-shadow:0 1px 0 rgba(0,0,0,0.2);
 	/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
 	/*border-radius*/-webkit-border-radius:15px; border-radius:15px;
 	/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding-box; background-clip:padding-box;
 	/*box-shadow*/
-	-webkit-box-shadow:inset 0px 1px 0px 0px rgba(0,0,0,0.1), inset 0px -1px 0px 0px rgba(255,255,255,0.8); 
+	-webkit-box-shadow:inset 0px 1px 0px 0px rgba(0,0,0,0.1), inset 0px -1px 0px 0px rgba(255,255,255,0.8);
 	box-shadow:inset 0px 1px 0px 0px rgba(0,0,0,0.1), inset 0px -1px 0px 0px rgba(255,255,255,0.8);
 	/*transition*/
 	/*-webkit-transform:translate3d(0,0,0);*/
@@ -966,14 +968,14 @@ h3[data-role="title"] > .icon { height:35px; font-size:15px; line-height:35px; }
 	-moz-transition:background-color 0.3s ease-in-out;
 	-o-transition:background-color 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out; }
- 
+
  	/* input */
- 	.slide[data-role="switch"] input[type="checkbox"] { 
+ 	.slide[data-role="switch"] input[type="checkbox"] {
 		display:none; }
-	
+
 	/* -------------------------------------------------------------------------- */
 	/* switch-controls */
-	.slide[data-role="switch"] .switch-controls { 
+	.slide[data-role="switch"] .switch-controls {
 		display:table; position:absolute; top:0; left:-40px; width:110px; height:auto; margin:0; padding:0; overflow:hidden;
 		/*transition*/
 		/*-webkit-transform:translate3d(0,0,0);*/
@@ -981,35 +983,35 @@ h3[data-role="title"] > .icon { height:35px; font-size:15px; line-height:35px; }
 		-moz-transition:left 0.3s ease-in-out;
 		-o-transition:left 0.3s ease-in-out;
 		transition:left 0.3s ease-in-out; }
-		
+
 		/* common */
 		.slide[data-role="switch"] .switch-controls > span,
-		.slide[data-role="switch"] .switch-controls > label { vertical-align:middle; }		
-		
+		.slide[data-role="switch"] .switch-controls > label { vertical-align:middle; }
+
 		/* label */
-		.slide[data-role="switch"] .switch-controls label { 
+		.slide[data-role="switch"] .switch-controls label {
 			display:inline-block; width:20px; height:20px; margin:4px 5px; padding:0; overflow:hidden;
-			color:#fff; background:#fff; 
+			color:#fff; background:#fff;
 			/*border-radius*/-webkit-border-radius:50%; border-radius:50%;
 			/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding-box; background-clip:padding-box;
 			/*box-shadow*/-webkit-box-shadow:0px 4px 8px 0px rgba(0,0,0,0.3); box-shadow:0px 4px 8px 0px rgba(0,0,0,0.3); }
-		
+
 		/* switch-left/right */
 		.slide[data-role="switch"] .switch-left,
-		.slide[data-role="switch"] .switch-right { 
+		.slide[data-role="switch"] .switch-right {
 			display:inline-block; width:40px; height:28px; margin:0; padding:0; overflow:hidden;
 			vertical-align:middle; text-align:center; }
-		
+
 			/* icon */
 			.slide[data-role="switch"] .icon {
 				display:inline; position:static; top:auto; right:auto; width:auto; height:auto; margin:0;
 				color:#fff; font-size:20px; line-height:28px; }
-	
+
 /* -------------------------------------------------------------------------- */
 /* checked */
 .slide[data-role="switch"].checked { background:#4bd763; }
 .slide[data-role="switch"].checked .switch-controls { left:0; }
- 
+
 /* -------------------------------------------------------------------------- */
 /* extend */
 .itemSetting > .slide[data-role="switch"] { position:absolute; right:12px; top:50%; margin-top:-15px; }
@@ -1073,20 +1075,20 @@ h3[data-role="title"] > .icon { height:35px; font-size:15px; line-height:35px; }
 	background-image:-o-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 100%);
 	background-image:linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 100%);
 	/*box-shadow*/-webkit-box-shadow:inset 0px 0px 8px 0px rgba(0,0,0,0.5); box-shadow:inset 0px 0px 8px 0px rgba(0,0,0,0.5); }
-	
+
 	/* common */
 	.btnSocial .icon,
-	.btnSocial .label { 
+	.btnSocial .label {
 		display:block; position:absolute; top:50%; padding:0; overflow:hidden;
 		text-align:center; }
-	
+
 	/* icon */
-	.btnSocial .icon { 
-		left:50%; width:140px; height:140px; margin:-80px 0 0 -70px; 
+	.btnSocial .icon {
+		left:50%; width:140px; height:140px; margin:-80px 0 0 -70px;
 		font-size:140px; line-height:1em; }
-		
+
 	/* label */
-	.btnSocial .label { 
+	.btnSocial .label {
 		left:0; width:100%; height:20px; margin:60px 0 0 0;
 		font-family:'Montserrat',sans-serif; font-size:18px; font-weight:700; line-height:20px;  }
 
