@@ -1,0 +1,33 @@
+/* ==========================================================================
+   This is a custom skin CSS add-on file for VCSWS Mobile App
+   All custom themes and updates will go in here.
+   ========================================================================== */
+
+
+/* background colour for splash/home/menu pages */
+.pageBg { background-color:#1e9abb; }
+
+/* page header bar bg colour */
+.pageHeader { background:#ffc423; }
+
+/* tab button active theme colour */
+.pageNav .navTabs .btnTab.current,
+.pageNav .navTabs .btnTab.current.active { background-color:#007dc3; }
+
+/* title/logo/crest for menu page */
+.brandTitle { width:270px; height:75px; }
+
+/* collage/artwork for home page */
+.brandImage { padding-top:54.68%; }
+   
+/* list button active state for menu page */
+.menuList .menuItem.active { background:#ffc423; border-color:#ffc423; }
+
+/* text link colour */
+.contentView a { color:#007bc0!important; }
+
+/* btnCap base colour */
+.btnCap { background-color:#007dc3; }
+
+/* news/events/notifs icon bubble colour */
+.bubble { background:#3f95b2; }
