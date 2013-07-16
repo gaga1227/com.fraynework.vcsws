@@ -6,28 +6,33 @@
 
 /* background colour for splash/home/menu pages */
 .pageBg { background-color:#1e9abb; }
+#pgMenu .pageBg { background-position:0 0; }
 
 /* page header bar bg colour */
-.pageHeader { background:#ffc423; }
+.pageHeader { background:#1d457c; }
 
 /* tab button active theme colour */
 .pageNav .navTabs .btnTab.current,
-.pageNav .navTabs .btnTab.current.active { background-color:#007dc3; }
+.pageNav .navTabs .btnTab.current.active { background-color:#fdca10; }
 
 /* title/logo/crest for menu page */
 .brandTitle { width:270px; height:75px; }
 
 /* collage/artwork for home page */
 .brandImage { padding-top:54.68%; }
-   
+
+/* menu title bar background colour for home/menu page */
+.menu .title,
+.menuList .title { background-color:#fdca10; }
+
 /* list button active state for menu page */
-.menuList .menuItem.active { background:#ffc423; border-color:#ffc423; }
+.menuList .menuItem.active { background:#fdca10; border-color:#fdca10; }
 
 /* text link colour */
-.contentView a { color:#007bc0!important; }
+.contentView a { color:#1d457c!important; }
 
 /* btnCap base colour */
-.btnCap { background-color:#007dc3; }
+.btnCap { background-color:#fdca10; }
 
 /* news/events/notifs icon bubble colour */
-.bubble { background:#3f95b2; }
+.bubble { background:#00aff0; }
