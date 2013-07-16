@@ -282,10 +282,6 @@ body {
 	.pageContent > .scroller {
 		position:absolute; top:0; left:0; bottom:0; width:100%; }
 
-	/* native scroll for iOS */
-	.ios .pageContent > .scroller {
-		overflow:scroll; -webkit-overflow-scrolling:touch; }
-
 
 /* ==========================================================================
    common - BRAND
@@ -919,6 +915,15 @@ section,
 /* ==========================================================================
    common - TITLE
    ========================================================================== */
+   
+/* native scroll for iOS */
+.ios .scroller,
+.ios [data-role="scroller"] { overflow:scroll; -webkit-overflow-scrolling:touch; }
+
+
+/* ==========================================================================
+   common - TITLE
+   ========================================================================== */
 
 /* -------------------------------------------------------------------------- */
 /* common */
@@ -1311,7 +1316,7 @@ h3[data-role="title"] > .icon { height:35px; font-size:15px; line-height:35px; }
 
 /* contactInfo */
 #contactInfo { position:absolute; top:220px; left:0; bottom:0; width:100%; height:auto; overflow:hidden; }
-#contactInfo > .title + .scroller { position:absolute; top:35px; left:0; bottom:0; overflow:hidden; }
+#contactInfo > .title + .scroller { position:absolute; top:35px; left:0; bottom:0; }
 
 
 /* ==========================================================================
