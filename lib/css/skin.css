@@ -5,15 +5,15 @@
 
 
 /* background colour for splash/home/menu pages */
-.pageBg { background-color:#1e9abb; }
+.pageBg { background-color:#003868; }
 #pgMenu .pageBg { background-position:0 0; }
 
 /* page header bar bg colour */
-.pageHeader { background:#1d457c; }
+.pageHeader { background:#0377a3; }
 
 /* tab button active theme colour */
 .pageNav .navTabs .btnTab.current,
-.pageNav .navTabs .btnTab.current.active { background-color:#fdca10; }
+.pageNav .navTabs .btnTab.current.active { background-color:#f68b1f; }
 
 /* title/logo/crest for menu page */
 .brandTitle { width:270px; height:75px; }
@@ -23,16 +23,16 @@
 
 /* menu title bar background colour for home/menu page */
 .menu .title,
-.menuList .title { background-color:#fdca10; }
+.menuList .title { background-color:#f68b1f; }
 
 /* list button active state for menu page */
-.menuList .menuItem.active { background:#fdca10; border-color:#fdca10; }
+.menuList .menuItem.active { background:#f68b1f; border-color:#f68b1f; }
 
 /* text link colour */
-.contentView a { color:#1d457c!important; }
+.contentView a { color:#0377a3!important; }
 
 /* btnCap base colour */
-.btnCap { background-color:#fdca10; }
+.btnCap { background-color:#f68b1f; }
 
 /* news/events/notifs icon bubble colour */
-.bubble { background:#00aff0; }
+.bubble { background:#0377a3; }
